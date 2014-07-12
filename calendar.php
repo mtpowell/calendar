@@ -124,11 +124,12 @@
 		}
 		
 		private function printForm() {
-			echo "<form action='".$_SERVER['PHP_SELF']."' method='POST'>";
-			echo "<input type='text' value='Enter New Reminder' name='reminder'></input>";
-			echo "<input type='hidden' value='$this->month' name='month'></input>";
-			echo "<input type='hidden' value='$this->day' name='day'></input>";
-			echo "<input type='submit'></input>";
+			echo "<form action='".$_SERVER['PHP_SELF']."' method='POST' />";
+			echo "<input type='text' value='Enter New Reminder' name='reminder' />";
+			echo "<input type='hidden' value='$this->month' name='month' />";
+			echo "<input type='hidden' value='$this->day' name='day' />";
+			echo "<input type='submit' />";
+			echo "</form>";
 		}
 		
 		public function printMonths() {
